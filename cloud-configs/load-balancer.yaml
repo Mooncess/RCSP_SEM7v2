@@ -6,3 +6,4 @@ spring.cloud.loadbalancer.clients:
       - uri: http://hero-service:8080
 
 eureka.client.service-url.defaultZone: http://service-discovery:8761/eureka/
+hero.service.url: http://hero-service:8080
