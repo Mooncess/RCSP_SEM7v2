@@ -4,12 +4,12 @@ spring.cloud.gateway.routes:
   - id: hero-service
     uri: http://load-balancer:9000
     predicates:
-      - Path=/api/hero/**
+      - Path=/**
 
 spring.security.oauth2.client:
   registration.github:
-    client-id: Ov23liB3mRwGjPvAhYnQ
-    client-secret: c00c269b34e8498c49dad423fa06c7cf905923a2
+    client-id: Ov23lih7F7tWzzwowmWW
+    client-secret: 86ef5541d1e88384d5ee4a5b407e414633d1c656
     authorization-grant-type: authorization_code
     redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
     scope: read:user,user:email
